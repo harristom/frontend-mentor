@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css?family=Hanken+Grotesk:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  Your Result
-  76
-  of 100
+    <article class="results-card">
+        <section class="overall-result">
+            <h1>Your Result</h1>
+            <p class="overall-score-numeric">
+                <span class="score-numerator">76</span>
+                <span class="score-denominator">of 100</span>
+            </p>
+            <h2 class="overall-score-word">Great</h2>
+            You scored higher than 65% of the people who have taken these tests.
+        </section>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+        <section class="summary">
+            <h2 class="summary-header">Summary</h2>
+            <ul class="category-scores">
+                <li class="category-score reaction">
+                    <span class="category">Reaction</span>
+                    <span class="score">80 / 100</span>
+                </li>
+                <li class="category-score memory">
+                    <span class="category">Memory</span>
+                    <span class="score">92 / 100</span>
+                </li>
+                <li class="category-score verbal">
+                    <span class="category">Verbal</span>
+                    <span class="score">61 / 100</span>
+                </li>
+                <li class="category-score visual">
+                    <span class="category">Visual</span>
+                    <span class="score">72 / 100</span>
+                </li>
+            </ul>
+        </section>
+        <section class="continue">
+            <a href="">Continue</a>
+        </section>
+    </article>
 
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+    </footer>
 </body>
+
 </html>
