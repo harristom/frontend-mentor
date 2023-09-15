@@ -6,49 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css?family=Hanken+Grotesk:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Hanken+Grotesk:500,700,800" rel="stylesheet" />
     <title>Frontend Mentor | Results summary component</title>
-
+    <link rel="icon" href="images\favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <article class="results-card">
+
         <section class="overall-result">
-            <h1>Your Result</h1>
+            <h2 id="your-result">Your Result</h2>
             <p class="overall-score-numeric">
                 <span class="score-numerator">76</span>
                 <span class="score-denominator">of 100</span>
             </p>
             <h2 class="overall-score-word">Great</h2>
-            You scored higher than 65% of the people who have taken these tests.
+            <p class="overall-result-comparison">You scored higher than 65% of the people who have taken these tests.</p>
         </section>
 
         <section class="summary">
-            <h2 class="summary-header">Summary</h2>
+            <h3 class="summary-header">Summary</h3>
             <ul class="category-scores">
                 <li class="category-score reaction">
-                    <span class="category">Reaction</span>
-                    <span class="score">80 / 100</span>
+                    <div class="category-score-title">
+                        <img src="assets/images/icon-reaction.svg" alt="">
+                        <span class="category">Reaction</span>
+                    </div>
+                    <span class="score">80 <span class="out-of-100">/ 100</span></span>
                 </li>
                 <li class="category-score memory">
-                    <span class="category">Memory</span>
-                    <span class="score">92 / 100</span>
+                    <div class="category-score-title">
+                        <img src="assets/images/icon-memory.svg" alt="">
+                        <span class="category">Memory</span>
+                    </div>
+                    <span class="score">92 <span class="out-of-100">/ 100</span></span>
                 </li>
                 <li class="category-score verbal">
-                    <span class="category">Verbal</span>
-                    <span class="score">61 / 100</span>
+                    <div class="category-score-title">
+                        <img src="assets/images/icon-verbal.svg" alt="">
+                        <span class="category">Verbal</span>
+                    </div>
+                    <span class="score">61 <span class="out-of-100">/ 100</span></span>
                 </li>
                 <li class="category-score visual">
-                    <span class="category">Visual</span>
-                    <span class="score">72 / 100</span>
+                    <div class="category-score-title">
+                        <img src="assets/images/icon-visual.svg" alt="">
+                        <span class="category">Visual</span>
+                    </div>
+                    <span class="score">72 <span class="out-of-100">/ 100</span></span>
                 </li>
             </ul>
+            <a href="" class="button">Continue</a>
         </section>
-        <section class="continue">
-            <a href="">Continue</a>
-        </section>
+
     </article>
 
     <footer class="attribution">
