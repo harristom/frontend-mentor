@@ -18,6 +18,9 @@
     --pale-blue: hsl(221, 100%, 96%);
     --light-lavender: hsl(241, 100%, 89%);
     --dark-gray-blue: hsl(224, 30%, 27%);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 * {
@@ -26,10 +29,12 @@
     box-sizing: border-box;
 }
 
-html {
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
 }
 
 /* Main card */
@@ -62,6 +67,7 @@ html {
     opacity: 0.75;
 }
 
+/* Score glows on page load */
 
 @keyframes glow-score {
     0% {
@@ -128,7 +134,6 @@ html {
 .overall-result .overall-score-word {
     font-size: 1.5rem;
     animation: glow-word 1300ms;
-
 }
 
 .overall-result-comparison {
@@ -229,17 +234,13 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-    body {
-        display: grid;
-        height: 100vh;
-    }
-
     .results-card {
         flex-direction: row;
         border-radius: 30px;
         max-width: 720px;
         box-shadow: 0px 20px 40px 5px var(--cobalt-blue-bg);
-        place-self: center;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     .overall-result {
